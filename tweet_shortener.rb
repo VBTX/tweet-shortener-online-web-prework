@@ -11,7 +11,7 @@ def dictionary(words, substitutes)
 end
 
 def word_substituter(string)
-  tweet = string.split(" ")
+  tweet = string.split(", ")
   tweet.collect do |x|
     dictionary_hash.keys.each do |y|
       if x == y
