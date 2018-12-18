@@ -1,4 +1,4 @@
-def dictionary(words, substitutes)
+def dictionary
   dictionary = {
                     "hello" => "hi",
                     "to" => "2",
