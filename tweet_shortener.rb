@@ -14,13 +14,11 @@ def dictionary
 end
 
 def word_substituter(string)
-  tweet = string.split(" ")
-  tweet.collect do |x|
+  string.split(" ").collect do |x|
       if dictionary.keys.include?(x.downcase)
         x = dictionary[x.downcase]
       else
         x
 end
-tweet
 end
 end
