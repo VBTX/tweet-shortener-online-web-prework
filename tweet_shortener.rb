@@ -10,7 +10,7 @@ def dictionary(words, substitutes)
                   }
 end
 
-def word_subsituter(string)
+def word_substituter(string)
   tweet = string.to_a
   tweet.collect do |x|
     dictionary_hash.keys.each do |y|
