@@ -30,5 +30,5 @@ end
 def bulk_tweet_shortener(tweets)
   tweets.each do |string|
     puts word_subsituter(string)
-    
+end
 end
