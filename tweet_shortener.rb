@@ -20,6 +20,6 @@ def word_substituter(string)
       else
         x
 end
-return string.join()
+return string.join(" ")
 end
 end
