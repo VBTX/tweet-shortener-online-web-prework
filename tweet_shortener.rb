@@ -23,7 +23,10 @@ def word_substituter(string)
       else
         result << x
 end
-
 end
 result.join(' ')
+end
+
+def bulk_tweet_shortener(array)
+  puts word_substituter(array)
 end
