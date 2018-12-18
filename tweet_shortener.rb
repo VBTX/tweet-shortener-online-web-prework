@@ -45,5 +45,7 @@ def shortened_tweet_truncator(tweets)
   if chars > 140
      num = chars - 140
      tweets.truncate(num)
+  else
+    tweets
    end
 end
