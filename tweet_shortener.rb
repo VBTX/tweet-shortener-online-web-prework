@@ -23,6 +23,7 @@ def word_substituter(string)
       else
         result << x
 end
-result.join(' ')
+
 end
+result.join(' ')
 end
