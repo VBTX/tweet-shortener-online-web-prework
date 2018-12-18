@@ -28,7 +28,7 @@ result.join(' ')
 end
 
 def bulk_tweet_shortener(tweets)
-  tweets.collect do |string|
-    word_substituter(string)
+  tweets.map do |x|
+    word_substituter(x)
 end
 end
