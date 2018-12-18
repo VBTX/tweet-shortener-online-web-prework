@@ -28,10 +28,8 @@ result.join(' ')
 end
 
 def bulk_tweet_shortener(tweets)
-  arrof_tweets = []
-  tweets.each do |string|
-    arrof_tweets << word_substituter(string)
-
+  tweets.collect do |string|
+    word_substituter(string)
+    
 end
-puts arrof_tweets.join(" ")
 end
