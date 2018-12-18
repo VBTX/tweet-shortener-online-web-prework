@@ -1,5 +1,5 @@
 def dictionary(words, substitutes)
-  dictionary_hash = {
+  dictionary = {
                     "hello" => "hi",
                     "to, two, too" => "2",
                     "for, four" => "4",
@@ -13,7 +13,7 @@ end
 def word_substituter(string)
   tweet = string.split(", ")
   tweet.collect do |x|
-    dictionary_hash.keys.each do |y|
+    dictionary.keys.each do |y|
       if x == y
         x = dictionary_hash[y]
 
