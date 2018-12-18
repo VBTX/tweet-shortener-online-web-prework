@@ -28,7 +28,9 @@ result.join(' ')
 end
 
 def bulk_tweet_shortener(tweets)
+  arrof_tweets = []
   tweets.each do |string|
-    puts word_substituter(string)
+    arrof_tweets << word_substituter(string)
 end
+puts arrof_tweets
 end
