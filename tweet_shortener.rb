@@ -19,7 +19,7 @@ def word_substituter(string)
   tweet = string.split(' ')
   tweet.each do |x|
       if dictionary_array.include?(x.downcase)
-        result << dictionary[x]
+        result << dictionary[x.downcase]
       else
         result << x
 end
