@@ -16,13 +16,14 @@ end
 def word_substituter(string)
   result = []
   dictionary_array = dictionary.keys
-  string.split(" ").collect do |x|
-      if dictionary.keys.include?(x.downcase)
-        x = dictionary[x.downcase]
+  tweet = string.split(" ")
+  tweet.each do |x|
+      if dictionary_array.include?(x)
+        result << dictionary[x]
       else
-        x
+        result << x
+end
+result.join(" ")
 end
 
-end
-string.join(" ")
 end
