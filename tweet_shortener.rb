@@ -16,13 +16,13 @@ end
 def word_substituter(string)
   tweet = string.split(", ")
   tweet.collect do |x|
-    dictionary.keys.each do |y|
-      if x == y
-        x = dictionary_hash[y]
+      if dictionary.keys.include?(x.downcase) 
+        x = dictionary[x.downcase]
+      else
+        x
+end
+return tweet.join(" ")
+end
+end
 
-end
-return tweet.to_s
-end
-end
 
-end
