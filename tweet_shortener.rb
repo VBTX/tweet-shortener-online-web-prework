@@ -21,6 +21,6 @@ def word_substituter(string)
       else
         x
 end
-return tweet.join(" ")
+tweet.join(" ")
 end
 end
