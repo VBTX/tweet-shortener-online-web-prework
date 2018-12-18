@@ -1,5 +1,5 @@
 def dictionary
-  conversion = {
+  {
                     "hello" => "hi",
                     "to" => "2",
                     "two" => "2",
@@ -14,6 +14,8 @@ def dictionary
 end
 
 def word_substituter(string)
+  result = []
+  dictionary_array = dictionary.keys
   string.split(" ").collect do |x|
       if dictionary.keys.include?(x.downcase)
         x = dictionary[x.downcase]
